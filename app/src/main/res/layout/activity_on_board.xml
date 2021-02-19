@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlue"
-    tools:context=".ui.onboard.OnBoardActivity">
+    tools:context=".ui.onboard.OnBoardMainFragment">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/onBoardViewPager"
@@ -16,8 +16,8 @@
         android:id="@+id/onBoardTabLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="14dp"
-        android:elevation="-1dp"
+        android:layout_marginBottom="@dimen/dp14"
+        android:background="@null"
         app:layout_constraintBottom_toTopOf="@id/tvNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,12 +28,11 @@
         android:id="@+id/tvNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="@dimen/dp50"
         android:fontFamily="@font/gothampro_medium"
         android:gravity="center"
-        android:text="Пропустить"
         android:textColor="@color/colorWhite"
-        android:textSize="16sp"
+        android:textSize="@dimen/sp16"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
